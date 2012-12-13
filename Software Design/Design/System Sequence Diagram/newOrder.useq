@@ -1,0 +1,14 @@
+<sequence-diagram version="1.0.11" icons="true">  
+  <object id="1" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.LocationControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/LocationControl.java" 
+    binary="false" label="locationControl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="90" y="0"/>  
+  </object>  
+  <object id="2" language="java" name="ucn.dmf83.sem1project.group4.DomainLayer.Location" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/DomainLayer/Location.java" binary="false" 
+    label="location" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="326" y="0"/>  
+  </object>
+</sequence-diagram>
