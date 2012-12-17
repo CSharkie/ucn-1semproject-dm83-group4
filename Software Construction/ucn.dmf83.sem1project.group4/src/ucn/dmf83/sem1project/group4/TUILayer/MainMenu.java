@@ -54,6 +54,12 @@ public class MainMenu {
     			exit = true;
     			break;
     		}
+    		case 5:
+    		{
+    			startDepartmentMenu();
+    			exit = true;
+    			break;
+    		}
     		case 0:
     		{
     			writeEnd();
@@ -82,7 +88,7 @@ public class MainMenu {
     	System.out.println(" [4] Customers Menu");
     	System.out.println(" [5] Departments Menu");
     	System.out.println(" [0] Close");
-    	System.out.print("\n Make your choise: ");
+    	System.out.print("\n Make your choice: ");
     	int choise = keyboard.nextInt();
     	return choise;
     }

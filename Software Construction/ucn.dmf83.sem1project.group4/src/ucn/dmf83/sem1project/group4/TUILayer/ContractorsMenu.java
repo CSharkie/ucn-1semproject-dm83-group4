@@ -119,7 +119,7 @@ public class ContractorsMenu {
 		System.out.println(" [4] List all CContractors");
 		System.out.println(" [5] Search for Contractor");
 		System.out.println(" [0] Back to Main Menu");
-		System.out.println("\n\n Make your choise: ");
+		System.out.println("\n\n Make your choice: ");
 		int choise = keyboard.nextInt();
 		return choise;
 	}

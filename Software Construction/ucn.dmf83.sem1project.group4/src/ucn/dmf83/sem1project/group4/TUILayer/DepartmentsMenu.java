@@ -71,7 +71,7 @@ public class DepartmentsMenu {
 		System.out.println(" [1] DIY Department");
 		System.out.println(" [2] Timber Merchant Department");
 		System.out.println(" [0] Back to Main Menu");
-		System.out.println("\n\n Make your choise: ");
+		System.out.println("\n\n Make your choice: ");
 		int choise = keyboard.nextInt();
 		return choise;
 	}
