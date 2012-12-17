@@ -2,8 +2,6 @@ package ucn.dmf83.sem1project.group4.DomainLayer;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
-
 public class OrderContainer {
 	
 private ArrayList<Order> orders;

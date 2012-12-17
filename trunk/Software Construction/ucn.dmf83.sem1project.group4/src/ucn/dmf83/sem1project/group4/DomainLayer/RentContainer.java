@@ -1,7 +1,6 @@
 package ucn.dmf83.sem1project.group4.DomainLayer;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class RentContainer {
 	
