@@ -120,7 +120,7 @@ public class EmployeesMenu {
 		System.out.println(" [4] List all Emplyees");
 		System.out.println(" [5] Search for Emplyee");
 		System.out.println(" [0] Back to Main Menu");
-		System.out.println("\n\n Make your choise: ");
+		System.out.println("\n\n Make your choice: ");
 		int choise = keyboard.nextInt();
 		return choise;
 	}

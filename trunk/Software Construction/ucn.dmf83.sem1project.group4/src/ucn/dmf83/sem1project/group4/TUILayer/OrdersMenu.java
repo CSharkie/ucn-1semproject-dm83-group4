@@ -56,7 +56,7 @@ public class OrdersMenu {
 		System.out.println("\n\n *** Order Menu *** ");
 		System.out.println(" [1] ");
 		System.out.println(" [0] Back to Main Menu");
-		System.out.println("\n\n Make your choise: ");
+		System.out.println("\n\n Make your choice: ");
 		int choise = keyboard.nextInt();
 		return choise;
 	}
