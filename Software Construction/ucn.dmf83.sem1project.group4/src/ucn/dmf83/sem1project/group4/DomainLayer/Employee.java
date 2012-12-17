@@ -12,7 +12,28 @@ public class Employee extends User {
 	private Location location;
 	private employeeRole role;
 	
+	private String userName; // Used for the login screen
+
+	public Employee(String name, int ID, Location location, employeeRole role,
+			String userName) {
+		super(name, ID);
+		this.location = location;
+		this.role = role;
+		this.userName = userName;
+	}
 	
+	
+	public Employee() {
+		super();
+	}
+
+	
+	public Employee(String name, int ID, String userName) {
+		super(name, ID);
+		this.userName = userName;
+	}
+
+
 	/**
 	 * @return the location
 	 */

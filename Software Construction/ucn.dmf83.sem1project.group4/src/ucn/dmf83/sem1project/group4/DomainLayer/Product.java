@@ -6,7 +6,8 @@ import java.util.Date;
 
 public class Product extends Item{
 	
-	private TreeMap<Date,Integer> prices;
+	private TreeMap<Date, Integer> stockPrices;
+	private TreeMap<Date,Integer> salesPrices;
 	
 	private int currentNumber;
 	
@@ -20,6 +21,8 @@ public class Product extends Item{
 	 */
 	public Product(int ID, String name, String description) {
 		super(ID, name, description);
+		stockPrices = new TreeMap<Date,Integer>();
+		salesPrices = new TreeMap<Date,Integer>();
 	}
 	
 	/**
@@ -28,6 +31,8 @@ public class Product extends Item{
 	 */
 	public Product(int ID, String name) {
 		super(ID, name);
+		stockPrices = new TreeMap<Date,Integer>();
+		salesPrices = new TreeMap<Date,Integer>();
 	}
 	/**
 	 * @return the currentNumber
@@ -69,16 +74,33 @@ public class Product extends Item{
 	
 	public void addPrice(Date date, int price)
 	{
-		prices.put(date, price);
+		salesPrices.put(date, price);
 	}
 	
 	public int getPrice(Date date)
 	{
-		return prices.floorEntry(date).getValue();
+		return salesPrices.floorEntry(date).getValue();
 	}
 	
 	public void removePrice(Date date)
 	{
-		prices.remove(date);
+		salesPrices.remove(date);
+		checkStock();
+	}
+	
+	public void sell(Integer amount) {
+		currentNumber -= amount;
+	}
+	
+	public void buy(Integer amount) {
+		currentNumber += amount;
+	}
+	
+	
+	public void checkStock()
+	{
+		if(currentNumber <= minNumber ) {
+			//reorder
+		}
 	}
 }

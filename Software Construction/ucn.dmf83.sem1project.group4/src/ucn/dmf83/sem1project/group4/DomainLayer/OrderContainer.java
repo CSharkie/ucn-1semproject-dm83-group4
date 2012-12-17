@@ -1,6 +1,7 @@
 package ucn.dmf83.sem1project.group4.DomainLayer;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 
 public class OrderContainer {
@@ -39,6 +40,46 @@ private ArrayList<Order> orders;
 		}
 		
 		return null;
+	}
+	
+	public ArrayList<Order> getOrders(Date startDate, Date endDate)
+	{
+		ArrayList<Order> orders = new ArrayList<Order>();
+
+		for(Order order : this.orders)
+		{
+			if(order.getOrderDate().after(startDate) && order.getOrderDate().before(endDate))
+				orders.add(order);
+		}
+		
+		
+		return orders;
+	}
+	
+	public ArrayList<Order> getOrders(Employee emp)
+	{
+		ArrayList<Order> orders = new ArrayList<Order>();
+		
+		for(Order order : this.orders)
+		{
+			if(order.getSeller() == emp)
+				orders.add(order);
+		}
+		
+		return orders;
+	}
+	
+	public ArrayList<Order> getOrders(Customer customer)
+	{
+		ArrayList<Order> orders = new ArrayList<Order>();
+		
+		for(Order order : this.orders)
+		{
+			if(order.getCustomer() == customer)
+				orders.add(order);
+		}
+		
+		return orders;
 	}
 
 }
