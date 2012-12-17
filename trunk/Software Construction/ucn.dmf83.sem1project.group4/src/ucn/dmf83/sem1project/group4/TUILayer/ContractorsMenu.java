@@ -29,14 +29,73 @@ public class ContractorsMenu {
 						// TODO Write the method
 						System.out.println();
 						System.out.println(" [1] Return ");
-						System.out.println(" [Enter] ");
+						System.out.println(" [Enter] Add another Contractor");
 						String var = keyboard.nextLine();
 							i=var;
 					}
 					new ContractorsMenu();
 					break;
 				} 
-				// TODO Write the rest of the menu options
+				case 2: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] Update another Contractor");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new ContractorsMenu();
+					break;
+				}
+				case 3: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] Remove another Contractor");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new ContractorsMenu();
+					break;
+				}
+				case 4: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] List all Contractors");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new ContractorsMenu();
+					break;
+				}
+				case 5: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] Search for another Contractor");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new ContractorsMenu();
+					break;
+				}
 				case 0: {
 					MainMenu.mainMenuStart();
 					exit = true;
@@ -54,7 +113,11 @@ public class ContractorsMenu {
 	{
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("\n\n *** Contractors Menu *** ");
-		System.out.println(" [1] ");
+		System.out.println(" [1] Add Contractor");
+		System.out.println(" [2] Update Contractor");
+		System.out.println(" [3] Remove Contractor");
+		System.out.println(" [4] List all CContractors");
+		System.out.println(" [5] Search for Contractor");
 		System.out.println(" [0] Back to Main Menu");
 		System.out.println("\n\n Make your choise: ");
 		int choise = keyboard.nextInt();

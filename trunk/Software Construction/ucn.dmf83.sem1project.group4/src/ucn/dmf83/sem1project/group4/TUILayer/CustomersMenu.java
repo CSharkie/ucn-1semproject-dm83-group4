@@ -29,14 +29,73 @@ public class CustomersMenu {
 						// TODO Write the method
 						System.out.println();
 						System.out.println(" [1] Return ");
-						System.out.println(" [Enter] ");
+						System.out.println(" [Enter] Add another Customer");
 						String var = keyboard.nextLine();
 							i=var;
 					}
 					new CustomersMenu();
 					break;
 				} 
-				// TODO Write the rest of the menu options
+				case 2: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] Update another customer");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new CustomersMenu();
+					break;
+				}
+				case 3: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] Remove another Customer");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new CustomersMenu();
+					break;
+				} 
+				case 4: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] List again all Customers");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new CustomersMenu();
+					break;
+				} 
+				case 5: {
+					String i="";
+					while (!i.equals("1"))
+					{
+						Scanner keyboard = new Scanner(System.in);
+						// TODO Write the method
+						System.out.println();
+						System.out.println(" [1] Return ");
+						System.out.println(" [Enter] Search for another Customer");
+						String var = keyboard.nextLine();
+							i=var;
+					}
+					new CustomersMenu();
+					break;
+				} 
 				case 0: {
 					MainMenu.mainMenuStart();
 					exit = true;
@@ -54,7 +113,11 @@ public class CustomersMenu {
 	{
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("\n\n *** Customers Menu *** ");
-		System.out.println(" [1] ");
+		System.out.println(" [1] Add Customer");
+		System.out.println(" [2] Update Customer");
+		System.out.println(" [3] Remove Customer");
+		System.out.println(" [4] List all Customers");
+		System.out.println(" [5] Search for Customer");
 		System.out.println(" [0] Back to Main Menu");
 		System.out.println("\n\n Make your choise: ");
 		int choise = keyboard.nextInt();

@@ -7,6 +7,7 @@ public class EmployeeContainer {
 	
 private ArrayList<Employee> employees;
 private ArrayList<employeeRole> employeeRoles;
+private Employee employee;
 	
 	private static EmployeeContainer instance = null;
 
@@ -72,6 +73,27 @@ private ArrayList<employeeRole> employeeRoles;
 		}
 		
 		return null;
+	}
+	
+	public void createEmployee(String name, int ID, Location location, employeeRole role, String userName)
+	{
+		if(checkID(ID)==false) {
+			System.out.println("ID already exists.");
+		} else {
+			Employee employee = new Employee(name, ID, location, role, userName);
+			addEmployee(employee);
+		}
+	}
+	
+	public void removeEmloyee(int ID)
+	{
+		if(getEmployee(ID)==null)
+		{
+			System.out.println("Emplyee ID doesn't exists.");
+		} else {
+			Employee employee = getEmployee(ID);
+			employees.remove(employee);
+		}
 	}
 
 }

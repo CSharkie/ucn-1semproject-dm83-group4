@@ -4,7 +4,7 @@ public class employeeRole {
 	private int ID;
 	
 	private String roleName;
-	private boolean hasElevatedRights;
+	private boolean hasElevatedRights; // If true, can add prices, modify customer level, etc.
 	
 	/**
 	 * @param roleName

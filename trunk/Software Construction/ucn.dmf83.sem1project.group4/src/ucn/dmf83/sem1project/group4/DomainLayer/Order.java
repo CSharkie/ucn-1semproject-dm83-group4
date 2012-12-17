@@ -192,10 +192,12 @@ public class Order {
 	public void addProduct(Product product, Integer amount)
 	{
 		orderItems.put(product, amount);
+		product.sell(amount);
 	}
 	
 	public void removeProduct(Product product)
 	{
+		product.buy(orderItems.get(product));
 		orderItems.remove(product);
 	}
 	
@@ -208,7 +210,9 @@ public class Order {
 	
 	public void modifyAmount(Product product, Integer amount)
 	{
+		product.buy(orderItems.get(product));
 		orderItems.put(product, amount);
+		product.sell(amount);
 	}
 	
 	public Order getOrder()
