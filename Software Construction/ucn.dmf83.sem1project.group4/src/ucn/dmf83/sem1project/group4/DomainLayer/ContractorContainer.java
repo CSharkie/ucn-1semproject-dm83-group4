@@ -1,7 +1,6 @@
 package ucn.dmf83.sem1project.group4.DomainLayer;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ContractorContainer {
 	
@@ -30,6 +29,7 @@ private ArrayList<Contractor> contractors;
 		contractors.remove(contractor);
 	}
 	
+	// Get a contractor if we know it's ID
 	public Contractor getContractor(int ID)
 	{
 		for(Contractor ct : contractors)
@@ -39,6 +39,20 @@ private ArrayList<Contractor> contractors;
 		}
 		
 		return null;
+	}
+	
+	// Get contractors by partial name or full name
+	public ArrayList<Contractor> getContractors(String name) {
+		ArrayList<Contractor> cts = new ArrayList<Contractor>();
+		for (Contractor ct : contractors) {
+			if(ct.getName().contains(name))
+				cts.add(ct);
+		}
+		return cts;
+	}
+	
+	public void addContractor(int ID, String name) {
+		addContractor(new Contractor(name, ID));
 	}
 
 }

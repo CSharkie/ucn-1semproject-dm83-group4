@@ -1,7 +1,5 @@
 package ucn.dmf83.sem1project.group4.DomainLayer;
 
-import java.util.ArrayList;
-
 public class Customer extends User {
 	
 	private int discount;
@@ -55,5 +53,8 @@ public class Customer extends User {
 		this.group = group;
 	}
 	
+	public Customer getCustomer() {
+		return this;
+	}
 	
 }
