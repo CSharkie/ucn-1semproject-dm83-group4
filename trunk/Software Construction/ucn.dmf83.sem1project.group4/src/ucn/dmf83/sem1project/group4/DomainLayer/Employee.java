@@ -58,6 +58,17 @@ public class Employee extends User {
 	public void setRole(employeeRole role) {
 		this.role = role;
 	}
+
+
+	public String getUserName() {
+		return userName;
+	}
+
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	
 	
 	
 }

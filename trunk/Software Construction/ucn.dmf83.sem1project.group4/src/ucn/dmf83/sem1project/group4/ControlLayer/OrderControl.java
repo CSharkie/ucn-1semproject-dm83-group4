@@ -1,5 +1,6 @@
 package ucn.dmf83.sem1project.group4.ControlLayer;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import ucn.dmf83.sem1project.group4.DomainLayer.*;
@@ -8,6 +9,7 @@ public class OrderControl {
 	
 	private OrderContainer orderContainer;
 	private Order order;
+	private Product product;
 	
 	private static OrderControl instance;
 	
@@ -30,14 +32,34 @@ public class OrderControl {
         return order;
     }
 	
-	public Order getOrder()
+	public Order getOrder(int ID)
     {
-        return order;
+        return orderContainer.getOrder(ID);
     }
 	
-	public double makePayment(double amount)
+	public ArrayList<Order> getOrders(Date startDate, Date endDate)
+	{
+		return orderContainer.getOrders(startDate, endDate);
+	}
+	
+	public ArrayList<Order> getOrders(Employee emp)
+	{
+		return orderContainer.getOrders(emp);
+	}
+	
+	public ArrayList<Order> getOrders(Date startDate)
+	{
+		return orderContainer.getOrders(startDate, new Date());
+	}
+	
+	public double makePayment(Order o, double amount)
     {
-        return amount - order.getFinalPrice();
+        return amount - o.getFinalPrice();
     }
+	
+	public void removeOrder(Order order)
+	{
+		orderContainer.removeOrder(order);
+	}
 
 }

@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class LocationContainer {
 	
-private ArrayList<Location> locations;
+	private ArrayList<Location> locations;
 	
 	private static LocationContainer instance = null;
 
