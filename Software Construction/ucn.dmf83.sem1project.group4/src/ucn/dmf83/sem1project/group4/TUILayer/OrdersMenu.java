@@ -54,13 +54,14 @@ public class OrdersMenu {
 	{
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("\n\n *** Order Menu *** ");
-		System.out.println(" [1] ");
+		System.out.println(" [1] List all Orders");
+		System.out.println(" [2] Search Order");
 		System.out.println(" [0] Back to Main Menu");
 		System.out.println("\n\n Make your choice: ");
 		int choise = keyboard.nextInt();
 		return choise;
 	}
 	
-	// TODO Import the methods from the ControlLayer
+	
 	
 }

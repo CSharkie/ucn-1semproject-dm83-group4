@@ -7,7 +7,6 @@ public class EmployeeContainer {
 	
 private ArrayList<Employee> employees;
 private ArrayList<employeeRole> employeeRoles;
-private Employee employee;
 	
 	private static EmployeeContainer instance = null;
 
