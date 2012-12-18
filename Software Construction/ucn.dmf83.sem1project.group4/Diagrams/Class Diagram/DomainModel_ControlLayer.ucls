@@ -1,0 +1,76 @@
+<class-diagram version="1.0.11" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.ContractorControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/ContractorControl.java" 
+    binary="false">    
+    <position height="78" width="195" x="18" y="43"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.CustomerControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/CustomerControl.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="116" y="175"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.EmployeeControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/EmployeeControl.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="182" y="305"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.LocationControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/LocationControl.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="121" y="421"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.OrderControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/OrderControl.java" binary="false">    
+    <position height="-1" width="-1" x="459" y="90"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.OfferControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/OfferControl.java" binary="false">    
+    <position height="-1" width="-1" x="459" y="181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="ucn.dmf83.sem1project.group4.ControlLayer.RentControl" 
+    project="ucn.dmf83.sem1project.group4" 
+    file="/ucn.dmf83.sem1project.group4/src/ucn/dmf83/sem1project/group4/ControlLayer/RentControl.java" binary="false">    
+    <position height="-1" width="-1" x="459" y="281"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
