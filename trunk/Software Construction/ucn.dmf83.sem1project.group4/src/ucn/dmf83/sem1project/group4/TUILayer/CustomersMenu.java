@@ -3,6 +3,7 @@ package ucn.dmf83.sem1project.group4.TUILayer;
 import java.util.Scanner;
 
 import ucn.dmf83.sem1project.group4.ControlLayer.*;
+import ucn.dmf83.sem1project.group4.DomainLayer.*;
 
 /**
  * @author Group 4 DM83F
@@ -122,6 +123,37 @@ public class CustomersMenu {
 		System.out.println("\n\n Make your choice: ");
 		int choise = keyboard.nextInt();
 		return choise;
+	}
+	
+	public static int inputID()
+	{   
+        boolean ok = false;
+        int ID = 0;
+        while(!ok)
+        {
+            Scanner keyboard = new Scanner(System.in);
+            System.out.println();
+            System.out.println(" Write ID:  ");
+            try{
+            	ID = keyboard.nextInt();
+                ok = true;
+            }
+            catch (Exception e)
+            {
+                System.out.println("You need to type in a number - try again!");
+                String input = keyboard.nextLine();
+            }
+        }
+        return ID;
+    }
+	
+	public static String inputName()
+	{
+		Scanner keyboard = new Scanner(System.in);
+        System.out.println();  
+        System.out.println(" Write Name:  ");
+        String name = keyboard.nextLine();
+        return name;
 	}
 	
 	// TODO Import the methods from the ControlLayer

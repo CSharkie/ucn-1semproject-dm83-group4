@@ -9,6 +9,8 @@ import java.util.Scanner;
  * @author Group 4 DM83F
  */
 public class EmployeesMenu {
+	
+	private static EmployeeControl employeeControl;
 
 	public static void start()
 	{
@@ -142,7 +144,7 @@ public class EmployeesMenu {
         {
             Scanner keyboard = new Scanner(System.in);
             System.out.println();
-            System.out.println(" Write Id:  ");
+            System.out.println(" Write ID:  ");
             try{
             	ID = keyboard.nextInt();
                 ok = true;
@@ -164,6 +166,8 @@ public class EmployeesMenu {
 		String userName = keyboard.nextLine();
 		return userName;
 	}
+	
+	
 	
 	// TODO Import the methods from the ControlLayer
 	

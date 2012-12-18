@@ -13,7 +13,7 @@ private ArrayList<customerGroup> customerGroups;
 		
 	}
 	
-	public CustomerContainer getInstance()
+	public static CustomerContainer getInstance()
 	{
 		if(instance == null) {
 	         instance = new CustomerContainer();
@@ -85,5 +85,16 @@ private ArrayList<customerGroup> customerGroups;
 	public void updateCustomer(Customer original, Customer newc) {
 		customers.remove(original);
 		customers.add(newc);
+	}
+	
+	public void removeCustomer(int ID)
+	{
+		if(getCustomer(ID)==null)
+		{
+			System.out.println("Customer ID doesn't exists.");
+		} else {
+			Customer customer = getCustomer(ID);
+			customers.remove(customer);
+		}
 	}
 }
