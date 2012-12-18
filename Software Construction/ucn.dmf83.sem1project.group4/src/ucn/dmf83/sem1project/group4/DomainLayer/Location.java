@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Location {
-	int ID;
+	private int ID;
 	
 	private String name;
 	private String address;
